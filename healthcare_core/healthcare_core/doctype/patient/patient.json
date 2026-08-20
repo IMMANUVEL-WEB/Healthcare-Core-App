@@ -1,173 +1,181 @@
 {
-    "actions": [],
-    "allow_rename": 0,
-    "autoname": "field:patient_id",
-    "creation": "2026-08-19 20:00:00.000000",
-    "doctype": "DocType",
-    "engine": "InnoDB",
-    "field_order": [
-        "patient_id",
-        "first_name",
-        "middle_name",
-        "last_name",
-        "date_of_birth",
-        "gender",
-        "mobile",
-        "email",
-        "address",
-        "city",
-        "state",
-        "country",
-        "blood_group",
-        "patient_status",
-        "emergency_contact_name",
-        "emergency_contact_number",
-        "emergency_contact_relationship"
-    ],
-    "fields": [
-        {
-            "fieldname": "patient_id",
-            "fieldtype": "Data",
-            "label": "Patient ID",
-            "reqd": 1,
-            "unique": 1
-        },
-        {
-            "fieldname": "first_name",
-            "fieldtype": "Data",
-            "label": "First Name",
-            "reqd": 1
-        },
-        {
-            "fieldname": "middle_name",
-            "fieldtype": "Data",
-            "label": "Middle Name"
-        },
-        {
-            "fieldname": "last_name",
-            "fieldtype": "Data",
-            "label": "Last Name"
-        },
-        {
-            "fieldname": "date_of_birth",
-            "fieldtype": "Date",
-            "label": "Date of Birth"
-        },
-        {
-            "fieldname": "gender",
-            "fieldtype": "Select",
-            "label": "Gender",
-            "options": "Male\nFemale\nOther"
-        },
-        {
-            "fieldname": "mobile",
-            "fieldtype": "Data",
-            "label": "Mobile"
-        },
-        {
-            "fieldname": "email",
-            "fieldtype": "Data",
-            "label": "Email"
-        },
-        {
-            "fieldname": "address",
-            "fieldtype": "Small Text",
-            "label": "Address"
-        },
-        {
-            "fieldname": "city",
-            "fieldtype": "Data",
-            "label": "City"
-        },
-        {
-            "fieldname": "state",
-            "fieldtype": "Data",
-            "label": "State"
-        },
-        {
-            "fieldname": "country",
-            "fieldtype": "Data",
-            "label": "Country"
-        },
-        {
-            "fieldname": "blood_group",
-            "fieldtype": "Select",
-            "label": "Blood Group",
-            "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
-        },
-        {
-            "default": "Active",
-            "fieldname": "patient_status",
-            "fieldtype": "Select",
-            "label": "Patient Status",
-            "options": "Active\nInactive",
-            "reqd": 1
-        },
-        {
-            "fieldname": "emergency_contact_name",
-            "fieldtype": "Data",
-            "label": "Emergency Contact Name"
-        },
-        {
-            "fieldname": "emergency_contact_number",
-            "fieldtype": "Data",
-            "label": "Emergency Contact Number"
-        },
-        {
-            "fieldname": "emergency_contact_relationship",
-            "fieldtype": "Data",
-            "label": "Emergency Contact Relationship"
-        }
-    ],
-    "links": [],
-    "modified": "2026-08-19 20:00:00.000000",
-    "modified_by": "Administrator",
-    "module": "Healthcare Core",
-    "name": "Patient",
-    "owner": "Administrator",
-    "permissions": [
-        {
-            "role": "Healthcare Administrator",
-            "create": 1,
-            "delete": 1,
-            "export": 1,
-            "print": 1,
-            "read": 1,
-            "write": 1
-        },
-        {
-            "role": "Healthcare Manager",
-            "create": 1,
-            "export": 1,
-            "print": 1,
-            "read": 1,
-            "write": 1
-        },
-        {
-            "role": "Healthcare Staff",
-            "create": 1,
-            "read": 1,
-            "write": 1
-        },
-        {
-            "role": "Doctor",
-            "create": 1,
-            "read": 1,
-            "write": 1
-        },
-        {
-            "role": "Nurse",
-            "read": 1,
-            "write": 1
-        },
-        {
-            "role": "Receptionist",
-            "create": 1,
-            "read": 1,
-            "write": 1
-        }
-    ],
-    "sort_field": "modified",
-    "sort_order": "DESC",
-    "track_changes": 1
+ "actions": [],
+ "autoname": "field:first_name",
+ "creation": "2026-08-19 20:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_id",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "date_of_birth",
+  "gender",
+  "mobile",
+  "email",
+  "address",
+  "city",
+  "state",
+  "country",
+  "blood_group",
+  "patient_status",
+  "emergency_contact_name",
+  "emergency_contact_number",
+  "emergency_contact_relationship"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "default": "Active",
+   "fieldname": "patient_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Patient Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "fieldname": "emergency_contact_number",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "fieldname": "emergency_contact_relationship",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Relationship"
+  }
+ ],
+ "links": [],
+ "modified": "2026-08-20 15:34:00.121907",
+ "modified_by": "Administrator",
+ "module": "Healthcare Core",
+ "name": "Patient",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Healthcare Administrator",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Healthcare Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Healthcare Staff",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Doctor",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Nurse",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Receptionist",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name",
+ "track_changes": 1
 }
