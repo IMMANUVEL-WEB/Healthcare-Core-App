@@ -1,0 +1,76 @@
+{
+    "actions": [],
+    "creation": "2026-08-19 20:00:00.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "issingle": 1,
+    "field_order": [
+        "default_facility",
+        "default_department",
+        "default_country",
+        "default_timezone",
+        "default_currency",
+        "patient_naming_series",
+        "practitioner_naming_series"
+    ],
+    "fields": [
+        {
+            "fieldname": "default_facility",
+            "fieldtype": "Link",
+            "label": "Default Facility",
+            "options": "Healthcare Facility"
+        },
+        {
+            "fieldname": "default_department",
+            "fieldtype": "Link",
+            "label": "Default Department",
+            "options": "Healthcare Department"
+        },
+        {
+            "fieldname": "default_country",
+            "fieldtype": "Data",
+            "label": "Default Country"
+        },
+        {
+            "fieldname": "default_timezone",
+            "fieldtype": "Data",
+            "label": "Default Timezone"
+        },
+        {
+            "fieldname": "default_currency",
+            "fieldtype": "Data",
+            "label": "Default Currency"
+        },
+        {
+            "fieldname": "patient_naming_series",
+            "fieldtype": "Data",
+            "label": "Patient Naming Series",
+            "default": "PAT-.#####"
+        },
+        {
+            "fieldname": "practitioner_naming_series",
+            "fieldtype": "Data",
+            "label": "Practitioner Naming Series",
+            "default": "PRAC-.#####"
+        }
+    ],
+    "links": [],
+    "modified": "2026-08-19 20:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Healthcare Core",
+    "name": "Healthcare Settings",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "Healthcare Administrator",
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Manager",
+            "read": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC"
+}

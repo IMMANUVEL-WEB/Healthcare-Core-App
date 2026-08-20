@@ -1,0 +1,97 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:department_code",
+    "creation": "2026-08-19 20:00:00.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "department_name",
+        "department_code",
+        "facility",
+        "department_head",
+        "is_active"
+    ],
+    "fields": [
+        {
+            "fieldname": "department_name",
+            "fieldtype": "Data",
+            "label": "Department Name",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "department_code",
+            "fieldtype": "Data",
+            "label": "Department Code",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "facility",
+            "fieldtype": "Link",
+            "label": "Facility",
+            "options": "Healthcare Facility",
+            "reqd": 1
+        },
+        {
+            "fieldname": "department_head",
+            "fieldtype": "Link",
+            "label": "Department Head",
+            "options": "Practitioner"
+        },
+        {
+            "default": "1",
+            "fieldname": "is_active",
+            "fieldtype": "Check",
+            "label": "Is Active"
+        }
+    ],
+    "links": [],
+    "modified": "2026-08-19 20:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Healthcare Core",
+    "name": "Healthcare Department",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "Healthcare Administrator",
+            "create": 1,
+            "delete": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "share": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Manager",
+            "create": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Staff",
+            "read": 1
+        },
+        {
+            "role": "Doctor",
+            "read": 1
+        },
+        {
+            "role": "Nurse",
+            "read": 1
+        },
+        {
+            "role": "Receptionist",
+            "read": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_changes": 1
+}

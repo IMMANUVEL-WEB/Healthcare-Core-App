@@ -1,0 +1,108 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:service_code",
+    "creation": "2026-08-19 20:00:00.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "service_name",
+        "service_code",
+        "service_type",
+        "department",
+        "specialty",
+        "standard_duration",
+        "is_active"
+    ],
+    "fields": [
+        {
+            "fieldname": "service_name",
+            "fieldtype": "Data",
+            "label": "Service Name",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "service_code",
+            "fieldtype": "Data",
+            "label": "Service Code",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "service_type",
+            "fieldtype": "Select",
+            "label": "Service Type",
+            "options": "Consultation\nDiagnostic\nProcedure\nTherapy\nOther",
+            "reqd": 1
+        },
+        {
+            "fieldname": "department",
+            "fieldtype": "Link",
+            "label": "Department",
+            "options": "Healthcare Department"
+        },
+        {
+            "fieldname": "specialty",
+            "fieldtype": "Link",
+            "label": "Specialty",
+            "options": "Medical Specialty"
+        },
+        {
+            "fieldname": "standard_duration",
+            "fieldtype": "Int",
+            "label": "Standard Duration",
+            "description": "Duration in minutes"
+        },
+        {
+            "default": "1",
+            "fieldname": "is_active",
+            "fieldtype": "Check",
+            "label": "Is Active"
+        }
+    ],
+    "links": [],
+    "modified": "2026-08-19 20:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Healthcare Core",
+    "name": "Healthcare Service",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "Healthcare Administrator",
+            "create": 1,
+            "delete": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Manager",
+            "create": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Staff",
+            "read": 1
+        },
+        {
+            "role": "Doctor",
+            "read": 1
+        },
+        {
+            "role": "Nurse",
+            "read": 1
+        },
+        {
+            "role": "Receptionist",
+            "read": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_changes": 1
+}

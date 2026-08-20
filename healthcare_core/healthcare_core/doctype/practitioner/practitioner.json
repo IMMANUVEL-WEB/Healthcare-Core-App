@@ -1,0 +1,113 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:practitioner_name",
+    "creation": "2026-08-19 20:00:00.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "practitioner_name",
+        "user",
+        "practitioner_type",
+        "specialty",
+        "primary_facility",
+        "primary_department",
+        "license_number",
+        "is_active"
+    ],
+    "fields": [
+        {
+            "fieldname": "practitioner_name",
+            "fieldtype": "Data",
+            "label": "Practitioner Name",
+            "reqd": 1
+        },
+        {
+            "fieldname": "user",
+            "fieldtype": "Link",
+            "label": "User",
+            "options": "User"
+        },
+        {
+            "fieldname": "practitioner_type",
+            "fieldtype": "Select",
+            "label": "Practitioner Type",
+            "options": "Doctor\nNurse\nPhysiotherapist\nTechnician\nOther",
+            "reqd": 1
+        },
+        {
+            "fieldname": "specialty",
+            "fieldtype": "Link",
+            "label": "Specialty",
+            "options": "Medical Specialty"
+        },
+        {
+            "fieldname": "primary_facility",
+            "fieldtype": "Link",
+            "label": "Primary Facility",
+            "options": "Healthcare Facility",
+            "reqd": 1
+        },
+        {
+            "fieldname": "primary_department",
+            "fieldtype": "Link",
+            "label": "Primary Department",
+            "options": "Healthcare Department"
+        },
+        {
+            "fieldname": "license_number",
+            "fieldtype": "Data",
+            "label": "License Number"
+        },
+        {
+            "default": "1",
+            "fieldname": "is_active",
+            "fieldtype": "Check",
+            "label": "Is Active"
+        }
+    ],
+    "links": [],
+    "modified": "2026-08-19 20:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Healthcare Core",
+    "name": "Practitioner",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "Healthcare Administrator",
+            "create": 1,
+            "delete": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Manager",
+            "create": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Staff",
+            "read": 1
+        },
+        {
+            "role": "Doctor",
+            "read": 1
+        },
+        {
+            "role": "Nurse",
+            "read": 1
+        },
+        {
+            "role": "Receptionist",
+            "read": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_changes": 1
+}

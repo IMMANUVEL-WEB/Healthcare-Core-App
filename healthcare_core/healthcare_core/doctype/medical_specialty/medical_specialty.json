@@ -1,0 +1,85 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:specialty_code",
+    "creation": "2026-08-19 20:00:00.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "specialty_name",
+        "specialty_code",
+        "description",
+        "is_active"
+    ],
+    "fields": [
+        {
+            "fieldname": "specialty_name",
+            "fieldtype": "Data",
+            "label": "Specialty Name",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "specialty_code",
+            "fieldtype": "Data",
+            "label": "Specialty Code",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "description",
+            "fieldtype": "Small Text",
+            "label": "Description"
+        },
+        {
+            "default": "1",
+            "fieldname": "is_active",
+            "fieldtype": "Check",
+            "label": "Is Active"
+        }
+    ],
+    "links": [],
+    "modified": "2026-08-19 20:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Healthcare Core",
+    "name": "Medical Specialty",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "Healthcare Administrator",
+            "create": 1,
+            "delete": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Manager",
+            "create": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Staff",
+            "read": 1
+        },
+        {
+            "role": "Doctor",
+            "read": 1
+        },
+        {
+            "role": "Nurse",
+            "read": 1
+        },
+        {
+            "role": "Receptionist",
+            "read": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_changes": 1
+}

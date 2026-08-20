@@ -1,0 +1,116 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:facility_code",
+    "creation": "2026-08-19 20:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "facility_name",
+        "facility_code",
+        "facility_type",
+        "address",
+        "phone",
+        "email",
+        "is_active"
+    ],
+    "fields": [
+        {
+            "fieldname": "facility_name",
+            "fieldtype": "Data",
+            "label": "Facility Name",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "facility_code",
+            "fieldtype": "Data",
+            "label": "Facility Code",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "facility_type",
+            "fieldtype": "Select",
+            "label": "Facility Type",
+            "options": "Hospital\nClinic\nDiagnostic Center\nOther",
+            "reqd": 1
+        },
+        {
+            "fieldname": "address",
+            "fieldtype": "Small Text",
+            "label": "Address"
+        },
+        {
+            "fieldname": "phone",
+            "fieldtype": "Data",
+            "label": "Phone"
+        },
+        {
+            "fieldname": "email",
+            "fieldtype": "Data",
+            "label": "Email"
+        },
+        {
+            "default": "1",
+            "fieldname": "is_active",
+            "fieldtype": "Check",
+            "label": "Is Active"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2026-08-19 20:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Healthcare Core",
+    "name": "Healthcare Facility",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "role": "Healthcare Administrator",
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "share": 1,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Manager",
+            "create": 1,
+            "delete": 0,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "share": 0,
+            "write": 1
+        },
+        {
+            "role": "Healthcare Staff",
+            "read": 1,
+            "print": 1
+        },
+        {
+            "role": "Doctor",
+            "read": 1
+        },
+        {
+            "role": "Nurse",
+            "read": 1
+        },
+        {
+            "role": "Receptionist",
+            "read": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+}

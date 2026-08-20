@@ -64,6 +64,22 @@ app_license = "mit"
 # 	"Role": "home_page"
 # }
 
+fixtures = [
+    {
+        "dt": "Role",
+        "filters": [
+            ["name", "in", [
+                "Doctor",
+                "Nurse",
+                "Receptionist",
+                "Healthcare Staff",
+                "Healthcare Manager",
+                "Healthcare Administrator"
+            ]]
+        ]
+    }
+]
+
 # Generators
 # ----------
 

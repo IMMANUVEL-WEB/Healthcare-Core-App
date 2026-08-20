@@ -1,0 +1,80 @@
+[
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-08-19 21:28:32.639321",
+  "name": "Receptionist",
+  "restrict_to_domain": null,
+  "role_name": "Receptionist",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-08-19 21:28:32.879747",
+  "name": "Healthcare Manager",
+  "restrict_to_domain": null,
+  "role_name": "Healthcare Manager",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-08-19 21:28:32.887519",
+  "name": "Healthcare Staff",
+  "restrict_to_domain": null,
+  "role_name": "Healthcare Staff",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-08-19 21:28:32.894998",
+  "name": "Doctor",
+  "restrict_to_domain": null,
+  "role_name": "Doctor",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-08-19 21:28:32.903428",
+  "name": "Nurse",
+  "restrict_to_domain": null,
+  "role_name": "Nurse",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-08-19 21:28:32.914149",
+  "name": "Healthcare Administrator",
+  "restrict_to_domain": null,
+  "role_name": "Healthcare Administrator",
+  "two_factor_auth": 0
+ }
+]
