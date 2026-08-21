@@ -77,6 +77,18 @@ fixtures = [
                 "Healthcare Administrator"
             ]]
         ]
+    },
+    {
+        "dt": "Desktop Icon",
+        "filters": [
+            ["app", "=", "healthcare_core"]
+        ]
+    },
+    {
+        "dt": "Workspace Sidebar",
+        "filters": [
+            ["app", "=", "healthcare_core"]
+        ]
     }
 ]
 
